@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<style>
+  .box{
+        background-image: url(bg.jpg);
+        width: 100;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.35;
+        
+    }
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+form
+{
+position: absolute;top: 0;left: 0;
+background-color:rgb(196, 216, 157);
+width:fit-content;
+height: fit-content;
+border: solid yellowgreen;
+border-radius: 5%;
+padding:2%;Margin:5%;
+margin-left: 30%;
+}
+h1
+{
+   text-align: center; 
+   margin-bottom: 8%;
+   font-size: xx-large;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+lable
+{
+  color: crimson;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:medium;
+  
+}
+button{
+    height: 30px;
+    width: 120px;
+    background-color:yellowgreen;
+    color: crimson;
+    font-weight: bold;
+    font-size:large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    border: solid ;
+    border-width:1px;
+    border-radius: 5px;
+}
+input,select,textarea
+{
+    margin-top: 8px;
+}
+</style>
+
+
+<body>
+    <div class="box"></div>
+
+<form>
+    <h1>User Registration Form</h1>
+<table>
+<tr><td><lable>First Name:</lable></td>
+    <td><input type="text" placeholder="Enter your Firstname here" required></td></tr>
+
+<tr><td><lable>Last Name:</lable></td>
+    <td><input type="text" placeholder="Enter your Lastname here" required></td></tr>
+
+<tr><td><lable>Age:</lable></td>
+    <td><input type="number" placeholder="Enter your age here" required></td></tr>
+
+<tr><td><lable>Gender:</lable></td>
+<td><input type="radio" name="gender">Male <input type="radio" name="gender">Female <input type="radio" name="gender">Prefer not to say</inut></td></tr>
+
+<tr><td><lable>Contact Number:</lable></td>
+    <td><input type="number" placeholder="Enter your number here" required></td></tr>
+
+<tr><td><lable>E-Mail:</lable></td>
+    <td><input type="email" placeholder="Enter your Email here" required></td></tr>
+
+<tr><td><lable>Address</label></td>
+<td><textarea rows="3"></textarea></td></tr>
+
+<tr><td><lable>I am a</lable></td>
+<td><input type="checkbox" name="box">Student&nbsp;
+    <input type="checkbox" name="box">Job Seeker&nbsp;
+    <input type="checkbox" name="box">Working Professional&nbsp;
+    <input type="checkbox" name="box">Home maker&nbsp;</td></tr>
+
+<tr><td><lable>Qualification</lable></td>
+<td><input type="checkbox" name="box">SSLC&nbsp;
+    <input type="checkbox" name="box">HSC&nbsp;
+    <input type="checkbox" name="box">UG&nbsp;
+    <input type="checkbox" name="box">PG/P.hd&nbsp;</td></td></tr>
+<tr><td><lable>Preferred Course</lable></td>
+<td><select>
+    <option>---Select---</option>
+    <option>FSD MERN</option>
+    <option>FSD Java</option>
+    <option>FSD Python</option>
+    <option>C/C++</option>
+</select></td></tr>
+<tr><td><lable>Upload Resume</lable></td>
+<td><input type="file"></td></tr>
+</table>
+<center><button>Register</button></center>
+</form>
+</body>
+</html>
